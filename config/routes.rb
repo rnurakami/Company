@@ -1,11 +1,8 @@
 Company::Application.routes.draw do
-  get "access/index"
-
-  get "news/index"
-
-  get "about/index"
-
-  get "top/index"
+  root :to => "top#index"
+  get "/access" => "access#index"
+  get "/news" => "news#index"
+  get "/about" => "about#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
