@@ -1,4 +1,12 @@
 Company::Application.routes.draw do
+  get "access/index"
+
+  get "news/index"
+
+  get "about/index"
+
+  get "top/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
